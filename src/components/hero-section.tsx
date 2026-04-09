@@ -7,7 +7,7 @@ export default function HeroSection() {
     <section id="home" className="relative bg-secondary/20">
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.43.13_PM_1_gzioxc.jpg"
+          src="https://res.cloudinary.com/ddqqlfsjp/image/upload/q_auto/f_auto/v1775728668/Modern_brushed_aluminum_skirting_detail_c6maok.png"
           alt="Stylish sliding partition door in a modern living room"
           data-ai-hint="modern interior"
           fill

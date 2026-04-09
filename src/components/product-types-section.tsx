@@ -14,7 +14,7 @@ const product = {
     'Designed to complement contemporary wall and floor detailing',
   ],
   image:
-    'https://res.cloudinary.com/ddqqlfsjp/image/upload/q_auto/f_auto/v1775723371/Untitled_design_32_dfbgv6.png',
+    'https://res.cloudinary.com/ddqqlfsjp/image/upload/q_auto/f_auto/v1775728668/Modern_brushed_aluminum_skirting_detail_c6maok.png',
   aiHint: 'Aluminium Skirting',
 };
 
