@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-   basePath: '/uPVC-doors-and-windows',
+   basePath: '/aluminium-skirting-systems',
   trailingSlash: true,
   /* config options here */
   typescript: {
