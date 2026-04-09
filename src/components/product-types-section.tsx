@@ -15,7 +15,7 @@ const products = [
       'Clean finish with modern design',
     ],
     image:
-      'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753953824/WhatsApp_Image_2025-07-31_at_2.51.03_PM_1_cbmg1g.jpg',
+      'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1775721384/aluminium-screw-skirting-profile-1000x1000_f1puw3.webp',
     aiHint: 'Aluminium Skirting',
   },
 ];
