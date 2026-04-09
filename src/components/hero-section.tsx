@@ -20,7 +20,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-2xl text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-body tracking-tight">
-              <span className="text-primary">Aluminium Skirting</span>Systems<span className="text-primary">for Modern Spaces</span>
+              <span className="text-primary">Aluminium Skirting</span> Systems<span className="text-primary"> for Modern Spaces</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body text-gray-300">
               Sleek, protective skirting solutions — designed to enhance walls while offering durability and a clean architectural finish.
