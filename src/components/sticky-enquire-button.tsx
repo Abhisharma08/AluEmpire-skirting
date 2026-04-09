@@ -15,22 +15,21 @@ export default function StickyEnquireButton() {
   };
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      const servicesSection = document.getElementById("benefits");
-      if (servicesSection) {
-        const { top } = servicesSection.getBoundingClientRect();
-        if (top <= window.innerHeight) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+    const servicesSection = document.getElementById("solutions");
+    if (!servicesSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        rootMargin: "0px 0px -20% 0px",
       }
-    };
+    );
 
-    window.addEventListener("scroll", toggleVisibility);
-    toggleVisibility();
+    observer.observe(servicesSection);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => observer.disconnect();
   }, []);
 
   return (

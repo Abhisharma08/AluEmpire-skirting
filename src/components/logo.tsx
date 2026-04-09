@@ -10,6 +10,8 @@ export default function Logo() {
         height={50}
         priority
         className="h-12 w-auto"
+        quality={80}
+        sizes="225px"
       />
     </a>
   );

@@ -49,6 +49,7 @@ const formSchema = z.object({
     location: z.string().min(2, {
         message: "Location is required.",
     }),
+    lead_source: z.string(),
 });
 
 export default function LeadForm() {
@@ -65,6 +66,7 @@ export default function LeadForm() {
             requirement: undefined,
             designation: "",
             location: "",
+            lead_source: "Aluminium Skirting System",
         },
     });
 
@@ -78,6 +80,7 @@ export default function LeadForm() {
             name: step1Data.name,
             email: step1Data.email,
             phone: step1Data.phone,
+            lead_source: step1Data.lead_source,
         });
 
         setIsSubmitting(false);
@@ -135,6 +138,7 @@ export default function LeadForm() {
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                         {step === 1 && (
                             <>
+                                <input type="hidden" {...form.register("lead_source")} />
                                 <FormField
                                     control={form.control}
                                     name="name"

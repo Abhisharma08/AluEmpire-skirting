@@ -7,6 +7,7 @@ const step1Schema = z.object({
   name: z.string(),
   email: z.string().email(),
   phone: z.string(),
+  lead_source: z.string(),
 });
 
 const step2Schema = z.object({
@@ -134,6 +135,7 @@ export async function submitStep1(data: z.infer<typeof step1Schema>) {
     { property: 'lastname', value: lastName || '' },
     { property: 'email', value: data.email },
     { property: 'phone', value: data.phone },
+    { property: 'lead_source', value: data.lead_source },
   ];
   return await createHubspotContact(properties);
 }

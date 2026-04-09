@@ -24,11 +24,7 @@ export default function Home() {
           <WhyChooseUsSection />
         </AnimatedSection>
         <AnimatedSection>
-        </AnimatedSection>
-        <AnimatedSection>
           <FaqSection />
-        </AnimatedSection>
-        <AnimatedSection>
         </AnimatedSection>
       </main>
       <Footer />

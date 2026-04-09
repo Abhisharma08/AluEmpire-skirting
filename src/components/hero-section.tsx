@@ -13,6 +13,8 @@ export default function HeroSection() {
           fill
           className="object-cover"
           priority
+          quality={72}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>

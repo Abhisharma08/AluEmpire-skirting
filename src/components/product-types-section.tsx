@@ -15,7 +15,7 @@ const products = [
       'Clean finish with modern design',
     ],
     image:
-      'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1775721384/aluminium-screw-skirting-profile-1000x1000_f1puw3.webp',
+      'https://res.cloudinary.com/ddqqlfsjp/image/upload/q_auto/f_auto/v1775723371/Untitled_design_32_dfbgv6.png',
     aiHint: 'Aluminium Skirting',
   },
 ];
@@ -70,6 +70,8 @@ export default function ProductTypesSection() {
                     data-ai-hint={product.aiHint}
                     fill
                     className="object-cover"
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    quality={75}
                   />
                 </div>
               </CardHeader>

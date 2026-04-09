@@ -4,14 +4,20 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
+import { Poppins } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: 'AluEmpire | uPVC Doors & Windows',
+  title: 'AluEmpire | Aluminium Skirting Systems for Modern Spaces',
   description:
-    'Discover a smarter, stronger, and more sustainable way to style your home with Alu Empire’s high-performance uPVC doors and windows. Designed for durability, comfort, and modern aesthetics — we bring you lasting quality with minimal upkeep.',
+    'Discover a smarter, stronger, and more sustainable way to style your home or office with Alu Empire’s high-performance Aluminium Skirting Systems for Modern Spaces. Designed for durability, comfort, and modern aesthetics — we bring you lasting quality with minimal upkeep.',
 };
 
 const GA_ID = 'AW-17338354366';
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <Script
+        <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
         />
@@ -33,14 +39,12 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
-
-        <script src="//code.tidio.co/mz0zv7hmp9t2yzol4urumx6hbtteto6m.js" async></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <Script
+          src="https://code.tidio.co/mz0zv7hmp9t2yzol4urumx6hbtteto6m.js"
+          strategy="lazyOnload"
+        />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">
+      <body className={`${poppins.className} font-body antialiased bg-background text-foreground`}>
         {children}
         <Toaster />
         <Analytics />
