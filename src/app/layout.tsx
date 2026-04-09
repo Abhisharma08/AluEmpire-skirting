@@ -39,10 +39,6 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
-        <Script
-          src="https://code.tidio.co/mz0zv7hmp9t2yzol4urumx6hbtteto6m.js"
-          strategy="lazyOnload"
-        />
       </head>
       <body className={`${poppins.className} font-body antialiased bg-background text-foreground`}>
         {children}
