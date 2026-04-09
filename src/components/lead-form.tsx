@@ -126,7 +126,7 @@ export default function LeadForm() {
     }
 
     return (
-        <Card id="lead-form" className="bg-background/80 backdrop-blur-sm border-border/50">
+        <Card id="lead-form" className="scroll-mt-24 bg-background/80 backdrop-blur-sm border-border/50">
             <CardHeader>
                 <CardTitle className="font-body text-2xl text-primary">Get a Free Quote</CardTitle>
                 <CardDescription>

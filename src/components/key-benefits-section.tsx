@@ -54,8 +54,8 @@ export default function SkirtingSolutionsSection() {
 
                 {/* CTA Button */}
                 <div className="mt-6">
-                  <Button className="rounded-full px-6 group-hover:scale-105 transition-transform">
-                    Enquire Now
+                  <Button asChild className="rounded-full px-6 group-hover:scale-105 transition-transform">
+                    <a href="#lead-form">Enquire Now</a>
                   </Button>
                 </div>
 
